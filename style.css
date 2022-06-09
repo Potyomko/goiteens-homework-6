@@ -22,13 +22,26 @@ body {
 }
 a{
     text-decoration: none;
-
+}
+h1,
+h2,
+h3,
+p,
+ul{
+    margin-top: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 ul{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 .logo{
-    color: black;
+    color: #000;
     font-family: Raleway, sans-serif;
     font-style: 700;
     font-size: 26px;
@@ -71,8 +84,6 @@ span {
 }
 .hero-section{
     background-color: #2F303A;
-    width: 1600px;
-    height: 600px;
 }
 .hero-tittle{
     color: white;
@@ -198,11 +209,10 @@ span {
     margin-top: 0;
     margin-bottom: 0;
 }
-.header-nav{
-    display: flex;
-}
 .nav-list{
     display: flex;
+    margin-left: 93px;
+
 }
 .list-item{
     margin-right: 54px;
@@ -210,27 +220,38 @@ span {
 .link-list:last-child{
     margin-right: 0;
 }
+.header-nav,
 .contacts-nav{
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.contacts-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
 }
 .contacts-nav li+li{
     margin-left: 50px;
 }
 .hero-tittle{
-    padding-top: 200px;
-    padding-bottom: 30px;
-    padding-left: 452px;
-}
-.hero-tittle{
     display: flex;
+    margin-bottom: 30px;
 }
 .button{
     display: flex;
 }
 .button{
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px,25px;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding-top: 10px;
-   padding-bottom: 10px;
-   padding-left: 24px;
+    padding-bottom: 10px;
+    padding-left: 24px;
 }
 .logo-footer{
     margin-top: 60px;
@@ -239,12 +260,17 @@ span {
     padding-left: 215px;
     margin-bottom: 161px;
 }
-.address{
+.address-footer{
     padding-bottom: 120px;
     padding-left: 215px;
     margin-bottom: 120px;
 }
 .link-list-footer{
+    color: #ffff;
+    font-style: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 3%;
     padding-left: 215px;
     padding-bottom: 9px;
     margin-bottom: 90px;
@@ -256,4 +282,64 @@ span {
 .footer-nav{
     display: flex;
 }
-/*запитати про шапку*/
+.header-nav{
+    margin-bottom: 0;
+}
+.hero-section{
+    text-align: center;  
+    padding-top: 200px;
+    padding-bottom: 200px;   
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+}
+.features-item{
+    width: 270px;
+}
+.tittle{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.img{
+    display: flex;
+    justify-content: space-between;
+}
+.img-tittle{
+    margin-bottom: 50px;
+}
+.team{
+    display: flex;
+    justify-content: space-between;
+}
+.team-link{
+    width: 270px;
+    padding-bottom: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-link :not(:last-child){
+    margin-right: 30px;
+}
+.team-link img{
+    margin-bottom: 30px;
+}
+.profeshion{
+    margin-bottom: 0;
+}
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+/*запитати про текст герою*/
