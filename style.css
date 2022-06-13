@@ -41,6 +41,8 @@ ul{
     list-style: none;
 }
 .logo{
+    margin-top: 25px;
+    margin-bottom: 25px;
     color: #000;
     font-family: Raleway, sans-serif;
     font-style: 700;
@@ -61,7 +63,8 @@ span {
 {
     color: #2196F3;
 }
-.nav-list{
+.nav-list,
+.nav-link{
     color: #212121;
 }
 .list-item{
@@ -154,10 +157,6 @@ span {
 /*portfolio*/
 .link-list-footer{
     color: rgba(255, 255, 255, 0.6);
-    font-style: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 3%;
 }
 /*Усе*/
 .yce{
@@ -224,7 +223,7 @@ span {
 .contacts-nav{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 .contacts-nav{
     display: flex;
@@ -232,26 +231,30 @@ span {
     justify-content: flex-start;
     margin-left: auto;
 }
+.header-nav{
+    margin-bottom: 0;
+}
 .contacts-nav li+li{
     margin-left: 50px;
 }
 .hero-tittle{
     display: flex;
     margin-bottom: 30px;
+    justify-content: center;
 }
 .button{
     display: flex;
 }
 .button{
+    Height:50px;
+    border: 0;
     display: inline-block;
     min-width: 200px;
     padding: 10px,25px;
     border-radius: 4px;
-    text-decoration: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 24px;
+    margin-top: 0;
+    text-decoration: none;
 }
 .logo-footer{
     margin-top: 60px;
@@ -261,27 +264,12 @@ span {
     margin-bottom: 161px;
 }
 .address-footer{
-    padding-bottom: 120px;
-    padding-left: 215px;
-    margin-bottom: 120px;
-}
-.link-list-footer{
     color: #ffff;
     font-style: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 3%;
-    padding-left: 215px;
-    padding-bottom: 9px;
-    margin-bottom: 90px;
-}
-.link-list-footer:last-child{
-    padding-bottom: 0px;
-    margin-bottom: 60px;
 } 
-.footer-nav{
-    display: flex;
-}
 .header-nav{
     margin-bottom: 0;
 }
@@ -317,6 +305,9 @@ span {
 }
 .img-tittle{
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
 }
 .team{
     display: flex;
@@ -342,4 +333,26 @@ span {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.address-footer{
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+.paragraph{
+    padding-bottom: 0;
+}
+.image{
+    padding-top: 0;
+}
+.text-sect{
+    padding-bottom: 0;
+}
+.name,
+.profeshion
+{
+    display: flex;
+    justify-content: center;
+}
+
+
 /*запитати про текст герою*/
+/*доробити по запису, зупинилась на футері*/
